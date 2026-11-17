@@ -1,0 +1,565 @@
+{
+  "categories": [
+    {
+      "id": "overview",
+      "title": "综合综述与研究路线"
+    },
+    {
+      "id": "s1",
+      "title": "数据与观测：输入、感知与安全"
+    },
+    {
+      "id": "s2",
+      "title": "状态与记忆：表征与信息保留"
+    },
+    {
+      "id": "s3",
+      "title": "动力学与想象：世界预测与模拟"
+    },
+    {
+      "id": "s4",
+      "title": "评估与规划：候选选择与风险判断"
+    },
+    {
+      "id": "s5",
+      "title": "动作与控制：执行、监督与恢复"
+    },
+    {
+      "id": "s6",
+      "title": "反馈与更新：自进化与持续学习"
+    },
+    {
+      "id": "resources",
+      "title": "开源平台与研究资源"
+    },
+    {
+      "id": "research",
+      "title": "科研方法与学习经验"
+    }
+  ],
+  "entries": [
+    {
+      "id": 1,
+      "category": "overview",
+      "title": "具身智能安全领域前沿研究报告",
+      "url": "https://mp.weixin.qq.com/s/tTECvDrU57rKPZsv9VXU8g",
+      "summary": "报告从感知、认知、运动控制、工具治理、数据隐私和审计等方面梳理具身智能的安全问题，讨论网络与模型层面的异常如何转化为物理危害，并给出分阶段建设安全控制面的思路。内容横跨技术风险、系统防护与治理，可作为了解具身安全议题范围的总览材料。"
+    },
+    {
+      "id": 2,
+      "category": "s5",
+      "title": "具身智能新成果，PhysBrain 1.5全面开源",
+      "url": "https://mp.weixin.qq.com/s/cBMfHF2bpXo4didFg5-nfg",
+      "summary": "介绍 PhysBrain 1.5 的开源发布，重点是利用第一人称真实场景数据，把场景理解、未来状态预测与动作生成纳入同一物理交互闭环。分享提及 8B、2B 模型权重及评测套件，强调较小模型的部署门槛与前瞻纠错能力，属于物理基础模型的项目动态。"
+    },
+    {
+      "id": 3,
+      "category": "s1",
+      "title": "论文共研｜一张补丁如何劫持CoT，让机器人执行另一项任务？",
+      "url": "https://mp.weixin.qq.com/s/68SqhFtFxC30XlmTOb-ugw",
+      "summary": "解读 TRAP 对推理型 VLA 的定向视觉补丁攻击：在不改写用户指令的情况下，联合牵引中间推理与动作，使机器人转去执行另一项任务。文章介绍攻击权限、物理成像适配、仿真与真机实验，并讨论指令和推理一致性检测；其证据主要来自受控、短程操作任务。"
+    },
+    {
+      "id": 4,
+      "category": "overview",
+      "title": "二十一讲 | 第 1 讲：具身智能导论：从大模型到物理世界智能体",
+      "url": "https://mp.weixin.qq.com/s/l08ro3x2P1J3-2OkfBTB8A",
+      "summary": "面向入门读者解释具身智能如何通过观察、决策、行动和反馈持续改变物理环境，并对比传统机器人、模仿学习、强化学习、VLA 与世界模型等路线。文章把实时性、物理约束、安全、失败恢复与数据回流放进同一系统视角，适合建立完整闭环的基础概念。"
+    },
+    {
+      "id": 5,
+      "category": "s3",
+      "title": "世界模型 | 从 JEPA 演进到 WAM：LeWorldModel 与 Fast-WAM 的一条连续技术脉络",
+      "url": "https://mp.weixin.qq.com/s/mQmhnXii6uRI3iBvstmHEg",
+      "summary": "沿 JEPA 的演进梳理潜空间世界模型与世界动作模型，重点比较 LeWorldModel 和 Fast-WAM：前者侧重推理时的潜空间推演与目标规划，后者侧重训练时利用世界建模塑造策略表示。核心问题是未来预测应保留为运行时能力，还是主要转化为动作模型的内部能力。"
+    },
+    {
+      "id": 6,
+      "category": "overview",
+      "title": "清华崔鹏：Sora不是世界模型，不能反事实的只能叫worldmap｜世界模型50人",
+      "url": "https://mp.weixin.qq.com/s/_YoBPg4Bbp66Wy4pwu8S3Q",
+      "summary": "通过对崔鹏的访谈讨论关联拟合、稳定学习和因果智能之间的区别，强调干预、反事实与可验证性在世界模型中的作用。文章以 LimiX 和工业结构化数据应用说明这条路线，并呈现受访者对视频生成与因果世界建模边界的判断，适合了解概念争论与应用取向。"
+    },
+    {
+      "id": 7,
+      "category": "s3",
+      "title": "后生可畏，小团队做出英伟达关注的世界模型",
+      "url": "https://mp.weixin.qq.com/s/D54-9vV09u2FcyXC5KonOQ",
+      "summary": "简要介绍 Looped World Models：循环交替进行状态预测与动作采样，在模型生成的虚拟观测中开展规划和学习，以降低真实交互需求并改善长序列推演。保存的分享正文较短，提供了论文入口和方法概述，未展开具体模型结构与实验设置。"
+    },
+    {
+      "id": 8,
+      "category": "s2",
+      "title": "杨立昆团队新作LeVJEPA：算力砍掉95%，ImageNet反超7.6个点！重新定义视频预训练",
+      "url": "https://mp.weixin.qq.com/s/l2vmVmA12w8l97JWMzY0fg",
+      "summary": "介绍 LeVJEPA 的简化视频预训练方案，以视图间一致性与 SIGReg 分布正则抑制表征坍缩，减少对 EMA 目标编码器等辅助结构的依赖。文章分析随机 token 丢弃、因果注意力和训练成本，并区分图像识别与运动理解对采样策略的不同敏感性。"
+    },
+    {
+      "id": 9,
+      "category": "resources",
+      "title": "清华大学联合无问芯穹开源具身智能云原生纳管平台RLark，5分钟接入、10秒启动任务",
+      "url": "https://mp.weixin.qq.com/s/Jdr1wzniQD689afKGHuJ5g",
+      "summary": "介绍 RLark 如何将机器人、相机、边缘节点与云端算力纳入统一资源管理，通过设备运行时、任务编排和跨集群网络支持采集、训练、推理与真机验证。文章展示与 RLinf 配合的跨地域实验，并给出开源仓库、文档及部署入口，侧重具身研究的基础设施。"
+    },
+    {
+      "id": 10,
+      "category": "research",
+      "title": "比缝合更高级的创新思路",
+      "url": "https://www.xiaohongshu.com/discovery/item/6ab6338100000000140016c7?app_platform=harmony&app_version=9.47.0&share_from_user_hidden=true&xsec_source=app_share&type=normal&xsec_token=CBi3CO3T6ICJJFyS6Tsd8cA6IBgzZzPZqZ2vcBEhR9c60=&author_share=1&share_id=c400c1d9c6cc4d12a60fc15829b7ac9e&track_code=aSfQFHeRML&apptime=1790347440&xhsshare=WeixinSession",
+      "summary": "提出一种以真实困难条件驱动选题的方法：先理解成熟基线，再引入其未覆盖的分布偏移、遮挡或标注稀缺等条件，围绕该条件设计改进并验证。分享强调公开数据与可执行实验的重要性，并以视觉语言模型适应和少样本医学分割为例说明动机与方法如何对应。"
+    },
+    {
+      "id": 11,
+      "category": "overview",
+      "title": "斯坦福+英伟达联合提出：具身 AI 安全",
+      "url": "https://www.xiaohongshu.com/explore/6ab76cfb0000000018004ba4?app_platform=android&ignoreEngage=true&app_version=9.46.0&share_from_user_hidden=true&xsec_source=app_share&type=normal&xsec_token=CBfh3qWSVwcxhp8PIbWiJaHjUuEs1BcHObVwW5Fl1nqaw=&author_share=1&xhsshare=WeixinSession&shareRedId=N0c2ODY4R0JKSTdHPzgzR0s4TEpHPjY6&apptime=1790429828&share_id=adfc83340f9b4cebbfabf4fa54fc2e21&share_channel=wechat&track_code=7NMb8YpoAhw&wechatWid=064fecaca0d4cb9eb55e20d9f69622a6&wechatOrigin=menu",
+      "summary": "介绍 Rethinking Safety for Generalist Robots 对通用机器人安全的重新界定：风险不仅涉及碰撞和作用力，还取决于常识、物体关系、场景语义与用户意图。笔记概括其风险分类与全生命周期研究路线，强调安全需贯穿数据、模型、训练、部署和硬件环节。"
+    },
+    {
+      "id": 12,
+      "category": "overview",
+      "title": "复盘 Yann LeCun 2026 全套研究路线｜从 JEPA 到能规划的世界模型",
+      "url": "https://mp.weixin.qq.com/s/J6vZmFt9EK33d4QF5Fnl2A",
+      "summary": "按训练效率、表示与规划、理论边界、真实控制四个方向，串联 LeCun 相关的十一项世界模型研究。内容从轻量端到端 JEPA、视频预训练延伸到对象与状态表示、潜空间规划及控制，适合快速辨认 JEPA 路线内部不同工作的研究问题与相互关系。"
+    },
+    {
+      "id": 13,
+      "category": "s5",
+      "title": "jev+具身 小刀剌屁股开了眼",
+      "url": "https://www.xiaohongshu.com/discovery/item/6ab213ea000000003703f533?app_platform=harmony&app_version=9.49.0&share_from_user_hidden=true&xsec_source=app_share&type=video&xsec_token=CBzkicqtQrUOTVG5GGddj3SHo_IDMvJ-34nZaeJS9Acbg=&author_share=1&share_id=8f0943bf31ec4a5684f7558b2b9fea1d&track_code=5W0vyT2bwws&apptime=1790776599&xhsshare=WeixinSession",
+      "summary": "介绍将 JEV 接入基于 MuJoCo 的 HazardArena 语义安全评测环境，贯通视觉、指令与闭环动作轨迹。笔记以对象或语境改变后，同一动作由安全转为危险的成对场景说明评测思路，并列出场景与风险类型规模；本次摘要依据文字，未提取演示视频本体。"
+    },
+    {
+      "id": 14,
+      "category": "overview",
+      "title": "给大一新生的三万字World Models 和 World-Action Models 入学指南",
+      "url": "https://mp.weixin.qq.com/s/Ny54gWtujYGz8AgbQxMhvw",
+      "summary": "面向初学者系统介绍世界模型与世界动作模型，从内部模拟器的直觉出发，按建模方法和应用领域两条轴线组织材料。内容涵盖潜在状态空间模型、规划、Transformer、扩散、JEPA，以及机器人、自动驾驶和智能体环境，并讨论物理一致性、长时推演与评测边界。"
+    },
+    {
+      "id": 15,
+      "category": "resources",
+      "title": "Jev具身智能开源项目也来了！玩转抓方块、叠积木、绕障碍",
+      "url": "https://mp.weixin.qq.com/s/weS9Kz4yrfRl4k92i7Xajg",
+      "summary": "介绍 EmbodiedJev 仿真实验项目，用抓取、堆叠和绕障等任务展示视觉语言模型如何通过结构化动作接口参与闭环控制。文章提供安装、启动及模型接入说明，也支持规则基线和不同模型对比；其展示范围主要是仿真，不等同于已经完成真实机器人部署。"
+    },
+    {
+      "id": 16,
+      "category": "s5",
+      "title": "RT-Safe：实时具身环境中代理安全性评估",
+      "url": "https://www.xiaohongshu.com/discovery/item/6acb33f4000000001803b3b4?app_platform=harmony&app_version=9.49.2&share_from_user_hidden=true&xsec_source=app_share&type=normal&xsec_token=CBlv1LFRCyxgQ8i6ppHHYJe671UYP7oC69AsY6Abo-Bao=&author_share=1&share_id=fa74d49e8f224f9488f6385730da5820&track_code=1Donhiuw1oh&apptime=1791708684&xhsshare=WeixinSession",
+      "summary": "介绍 RT-SAFE 实时具身安全基准，核心是让环境在模型推理期间继续演化，从而显式记录被动碰撞、过时动作和规则违规。笔记指出任务完成率可能掩盖延迟导致的物理风险，并讨论推理投入与安全之间的权衡，以及利用离线强化学习改善执行行为的路径。"
+    },
+    {
+      "id": 17,
+      "category": "s4",
+      "title": "让“替身 Agent”先踩雷：一种面向 Agent 的推测式安全蜜罐",
+      "url": "https://mp.weixin.qq.com/s/MO37AJR0KQszdT6see1Ayw",
+      "summary": "解读推测式安全蜜罐 SSH：在隔离环境中使用助手、用户和环境模拟器预演未来交互，让更易暴露风险的替身提前发现多轮攻击路径，再干预真实智能体。文章讨论行为保真度、风险敏感度与搜索成本的权衡；该工作主要面向数字工具型 Agent，可为前瞻性安全判断提供参考。"
+    },
+    {
+      "id": 18,
+      "category": "s3",
+      "title": "具身智能 | JEPA-WAM 深度解读：让机器人学会预测世界的变化",
+      "url": "https://mp.weixin.qq.com/s/Hnf2MMNi7W-U1t4iegchjQ",
+      "summary": "详解 JEPA-WAM 如何把当前与未来观测的联合嵌入作为转移监督，在保留局部空间关系的潜空间中学习状态变化，并与动作生成共享预测器。训练时引入未来观测，部署时移除目标分支与预测头；文章围绕视觉分布变化下的泛化、结构设计与计算代价展开。"
+    },
+    {
+      "id": 19,
+      "category": "overview",
+      "title": "LeCun在ECCV 2026座无虚席的演讲内容，都在这了",
+      "url": "https://mp.weixin.qq.com/s/LC4VnndZ4PvwUT1p-B4jEg",
+      "summary": "整理 LeCun 关于世界模型的演讲路线，讨论从观察中学习物理常识、在表征空间预测行动后果，再结合目标和约束进行规划。内容串联 JEPA、防坍缩训练、DINO、V-JEPA 与分层规划，重点呈现研究主张及其支撑方法，而非单一模型的使用教程。"
+    },
+    {
+      "id": 20,
+      "category": "s6",
+      "title": "三万字Physical RSI：机器人递归自我改进",
+      "url": "https://mp.weixin.qq.com/s/wem4LP80rAMOwq37K0Vk4w",
+      "summary": "系统讨论 Physical RSI，区分任务内表现改善、可保留的能力更新，以及改进程序本身带来的递归增益，并用 L0-L5 层级组织相关工作。文章强调物理反馈噪声、复位与试验成本、因果归因和安全保持，并指出所调研文献尚未完成其严格定义下的物理递归改进证明。"
+    },
+    {
+      "id": 21,
+      "category": "research",
+      "title": "GPT-6.1 发布，新版 AI 学术审稿 Prompt 已更新！",
+      "url": "https://mp.weixin.qq.com/s/8wJL-TCqI8z8k_ZIzTPDRA",
+      "summary": "提供面向计算机论文的 AI 模拟审稿提示词，从研究价值、创新性、方法、实验、可信度、表达及拒稿风险等维度检查稿件，并通过多审稿人和汇总角色形成修改清单。其用途是辅助投稿前自查和证据补充，文章也说明模拟评分并不代表真实录用概率。"
+    },
+    {
+      "id": 22,
+      "category": "s4",
+      "title": "世界模型「越深越好」是错觉？DeepJEPA：把思考花在接触发生的那一瞬",
+      "url": "https://mp.weixin.qq.com/s/JnGim9u8fvwLueIVVs5Ivw",
+      "summary": "介绍 DeepJEPA 对测试时计算的分配方式：在世界模型的单次状态过渡内部按需增加递归更新，将计算集中于接触等能改变候选排序的关键事件。文章通过与均匀加深的对比，讨论预测深度、CEM 规划质量与计算预算之间的关系，强调计算应服务具体决策。"
+    },
+    {
+      "id": 23,
+      "category": "s6",
+      "title": "SHE: Trajectory-driven Safety Harness Evolution for LLM Agents",
+      "url": "https://arxiv.org/html/2608.09885v1#S3",
+      "summary": "SHE 从执行轨迹诊断安全失效，将 Agent 的运行框架拆成系统提示、规则库、安全记忆和工具策略四类可局部更新的工件，再用安全与效用验证筛选更新。论文证据来自语言模型智能体；群内同时提出把这类安全自进化方法迁移到具身场景，考察持续更新是否改善安全。"
+    },
+    {
+      "id": 24,
+      "category": "s6",
+      "title": "当Agent开始改自己，结果如何可信？",
+      "url": "https://mp.weixin.qq.com/s/1Wv62yf85IHIuu9mCDJqNw",
+      "summary": "围绕 Agent 修改自身运行框架后的可信性，梳理评估集过拟合、裁判漂移、奖励利用、权限扩张和约束失效等问题。文章综合提出不可修改的规范与权限底座、带证据的修订流程、独立验收和退役机制，属于对可信自进化系统的架构分析，而非单一已验证算法。"
+    },
+    {
+      "id": 25,
+      "category": "research",
+      "title": "《我妈说发表篇顶会有多难，于是我让她当了一次一作》",
+      "url": "https://mp.weixin.qq.com/s/t0sGRVkQiFv-YDif13Z_ng",
+      "summary": "以母亲模拟担任论文第一作者的故事，呈现选题、追踪文献、构造创新点、调试实验、应对审稿和修改论文的困难。内容主要是对科研过程与沟通方式的幽默表达，可用于理解研究工作的隐性投入与压力，不属于具身算法或实验结果材料。"
+    },
+    {
+      "id": 26,
+      "category": "s3",
+      "title": "世界模型+智能体=？Qwen给出惊人答案",
+      "url": "https://mp.weixin.qq.com/s/qWcn5gLO9wYclGCjwVevjg",
+      "summary": "简要介绍 Qwen-AgentWorld，以语言世界模型学习环境状态转移，并预测智能体动作带来的后续环境变化。该分享提供论文题目、入口和基本定位，可作为通用 Agent 环境预测方向的线索；保存的文字未包含详细训练方案或完整实验结果。"
+    },
+    {
+      "id": 27,
+      "category": "overview",
+      "title": "Agentic Robotics 是一次范式革新吗",
+      "url": "https://mp.weixin.qq.com/s/-9qveBPevukW28B-XTB18w",
+      "summary": "阐述 Agentic Robotics 将机器人策略开发组织为多智能体编程与验证过程的思路：生成模块化控制程序，在仿真中测试、诊断并迭代，再部署执行。文章以 Graph-as-Policy 等工作讨论技能组合、可解释结构及工程角色变化，重点是机器人智能开发范式的转变。"
+    },
+    {
+      "id": 28,
+      "category": "s6",
+      "title": "万物皆可RSI，自进化AI大爆发",
+      "url": "https://mp.weixin.qq.com/s/H3QRy0a7o_NaHKEOXLGMvg",
+      "summary": "从代码修复、GUI 操作、实验室规划与科学应用概览 RSI-Anything，用预演、学习和留用三个环节解释其闭环。世界模型先帮助选择值得消耗真实反馈的候选，再根据执行结果适配策略或预测器，最后检查新组合能否保留；文章侧重跨任务应用与结果展示。"
+    },
+    {
+      "id": 29,
+      "category": "s6",
+      "title": "世界模型｜自进化模型的全类型总结",
+      "url": "https://mp.weixin.qq.com/s/hLIHDfRIEnbJckZET8WSJA",
+      "summary": "拆解机器人领域不同强度的自进化，包括自生成数据、真机强化学习、想象空间策略改进、长期记忆与全生命周期反馈。文章强调物理试错成本和安全约束，并区分部署后微调、外层框架调整与更强的递归改进，适合作为阅读自进化材料时的概念索引。"
+    },
+    {
+      "id": 30,
+      "category": "s6",
+      "title": "在最难的泛化任务上，它比 Harness VLA 高 31 个点！",
+      "url": "https://mp.weixin.qq.com/s/braXTeZkLPPAr_O7jiJ-Bw",
+      "summary": "介绍 EmbodiedRSI 在冻结机器人基础模型的前提下，利用假设图与信息价值挑选物理实验，将交互结果转化为代码和技能的协同更新。快系统负责高效试验与修订，慢系统沉淀分层记忆，重点解决昂贵物理反馈的利用效率以及经验向新场景迁移的问题。"
+    },
+    {
+      "id": 31,
+      "category": "s5",
+      "title": "两万字学习π0.7 ：从多模态输入到实时动作生成",
+      "url": "https://mp.weixin.qq.com/s/D4tFeHkIGez9VaMkuY-ifg",
+      "summary": "按推理时间线拆解 π0.7 系统，说明相机与关节观测、历史状态、高层子任务、世界模型目标图像和低层动作生成之间的关系。文章还解释异步运行、动作执行与训练模块，便于理解多模态输入如何转化为实时控制；其中网页演示用于说明流程，并非浏览器现场运行模型。"
+    },
+    {
+      "id": 32,
+      "category": "s1",
+      "title": "Astra开始攻入具身腹地？天生就懂触觉，清华团队实测精细操作任务成功率达93.8%",
+      "url": "https://mp.weixin.qq.com/s/Vjc1gGhgAe7_jiPOAhbyFg",
+      "summary": "介绍 TacTalent 对通用多模态模型进行视触觉操作评估的思路：把视觉式触觉传感器的形变转为图像，与相机画面、位姿和少量示范一起输入模型，再由反馈驱动动作修正。文章重点讨论触觉信息如何接入通用视觉模型，以及精细接触任务对感知与控制的要求。"
+    },
+    {
+      "id": 33,
+      "category": "s3",
+      "title": "【世界模型前沿】LeHami：给 JEPA 加入辛几何，约束长时潜空间收缩，保守摆前十步速度误差降至基线的 1/2.8",
+      "url": "https://mp.weixin.qq.com/s/suR3dXBIp7yp6aceTDF10w",
+      "summary": "解读 LeHami 用结构化位置与动量潜状态、动作条件哈密顿流及辛积分，限制长期推演中的潜空间收缩。文章分别考察运动量表征、预测误差、时间步长与闭环控制，强调保持数学结构并不自动保证最强控制效果，证据主要来自所测试的摆系统与规划配置。"
+    },
+    {
+      "id": 34,
+      "category": "overview",
+      "title": "世界模型的 “三大路线” 分野：生成式视频、抽象预测与空间智能，谁在定义物理 AI 的底层架构？",
+      "url": "https://mp.weixin.qq.com/s/5sQovf5bk4ea4gNmTA8_Jw",
+      "summary": "比较生成式视频、抽象预测与空间智能三条世界模型路线，并从渲染、模拟和规划等功能解释它们的差异。文章联系代表系统、技术约束与产业应用，帮助区分视觉逼真、几何一致和行动有效等不同目标，适合用来梳理宏观路线与术语边界。"
+    },
+    {
+      "id": 35,
+      "category": "research",
+      "title": "本科生如何发表3篇CCF-A？顶会论文写作「焚诀」来了",
+      "url": "https://mp.weixin.qq.com/s/XIKoPWZzQr-6oS5e5Rk9RA",
+      "summary": "整理本科科研经验，覆盖从少量论文精读扩展到相关工作地图、沿代码主线理解大型仓库、复现基线、与研究者交流想法以及构建论文论证。文章强调文献理解、动手验证和写作之间的联系，属于学习路径与实践方法分享。"
+    },
+    {
+      "id": 36,
+      "category": "s5",
+      "title": "GPT-6 太慢？清华叉院提出 Spotter：具身模型先执行，VLM 只在出错时介入",
+      "url": "https://mp.weixin.qq.com/s/GR-wF2jaoYCwzbT4IU2M7A",
+      "summary": "详解 Spotter 的并行监督机制：具身策略持续执行，轻量模型监测进展，确认失败后由 VLM 规划修复并复查。文章分析执行与检查的时间差、允许领先的动作范围、无需场景重置的纠错，以及固定步数预算下的成功率和耗时，关注运行时恢复与效率。"
+    },
+    {
+      "id": 37,
+      "category": "s2",
+      "title": "清华一天连发3篇World Models，彻底杀疯了",
+      "url": "https://mp.weixin.qq.com/s/Puwwh2XeMs8gMTPeWip82Q",
+      "summary": "并列介绍 State World Models、PrismWAM 与 AEON，分别通过显式规则和持久状态、语义与物理分工、可渲染的四维空间表示来组织世界信息。三项工作的共同主题是将隐藏状态、几何结构及可执行变化与画面生成区分开，减少把视觉外观直接当作完整世界状态的问题。"
+    },
+    {
+      "id": 38,
+      "category": "s1",
+      "title": "宣传我们在TDSC2026关于对抗样本防御的工作",
+      "url": "https://www.xiaohongshu.com/discovery/item/6ad72375000000000c00a071?app_platform=harmony&app_version=9.50.0&share_from_user_hidden=true&xsec_source=app_share&type=normal&xsec_token=CBNt_84u0UxXju38YBX9woT2f7km32ruWjeTlns41yQzk=&author_share=1&share_id=32702f1b33b041bb80297b54e00eb614&track_code=5DtvfRr3i6u&apptime=1792717234&xhsshare=WeixinSession",
+      "summary": "介绍面向 CLIP 的 BAMD-AFT 对抗微调，通过边界反馈生成跨边界、近边界和困难样本，再结合分类型损失与交替优化协调边界保留和对抗纠正。笔记报告其在多种攻击和零样本下游任务中的评估，关注输入扰动鲁棒性与干净准确率之间的平衡。"
+    },
+    {
+      "id": 39,
+      "category": "s4",
+      "title": "VLA 之外真有空位！只做判断的Jev，补上了机器人来不及推理的缺口",
+      "url": "https://mp.weixin.qq.com/s/35PKHokdmGpSMTn26YMMzw",
+      "summary": "通过无人机、驾驶与机械臂仿真案例，分析 Jev 作为低频候选选择器在机器人系统中的位置。传统控制器负责高频稳定控制与安全约束，Jev 根据整理后的场景状态选择战术或可执行方案；文章强调决策、感知和控制的不同时间尺度，以及建议被安全模块否决的必要性。"
+    },
+    {
+      "id": 40,
+      "category": "s6",
+      "title": "机器人会自己攒Skill了！复旦提出具身自进化新框架",
+      "url": "https://mp.weixin.qq.com/s/TOpIMQasWsrgDO3u1mACjg",
+      "summary": "介绍 RoboSkill 将智能体现阶段探索出的有效操作代码沉淀为可复用技能，形成探索、执行和演化的循环。文章从现场推理耗时与目标场景数据成本出发，讨论如何让机器人在后续任务中复用经验、减少重复摸索，重点是技能积累与执行效率的持续改善。"
+    },
+    {
+      "id": 41,
+      "category": "s4",
+      "title": "AAAI论文｜WorldRFT：面向自动驾驶的规划导向隐式世界模型，强化微调提升端到端行车安全",
+      "url": "https://mp.weixin.qq.com/s/N7LWBneljwX4aQ1G0rmK3Q",
+      "summary": "解读自动驾驶框架 WorldRFT，利用 VGGT 几何先验增强场景表示，将规划拆成目标区域、空间路径与时间轨迹，并通过强化微调加入安全优化。文章关注从重建导向表征转向规划导向学习，结合离线与闭环基准说明几何信息、局部细化及安全奖励的作用。"
+    },
+    {
+      "id": 42,
+      "category": "research",
+      "title": "大学学什么，才不会被AI淘汰？——从一场CNCC圆桌论坛说开去",
+      "url": "https://mp.weixin.qq.com/s/ikPZSQZJIzmTBXSXJ1d13Q",
+      "summary": "从 CNCC 圆桌与 AI 辅助芯片设计案例讨论大学教育目标，强调基础知识仍是识别错误、定义任务和审核模型结果的依据。文章把问题定义、验证溯源、系统架构、价值判断和协作等能力放在核心位置，关注如何在 AI 参与执行后保留人的专业判断力。"
+    },
+    {
+      "id": 43,
+      "category": "s4",
+      "title": "世界模型｜机器人说「我会做」，这个把握有",
+      "url": "https://mp.weixin.qq.com/s/QyElQUAfn4rlkyvs-lEqHw",
+      "summary": "讨论机器人自报置信度与实际任务成功率之间的差距，区分动作层、整段任务层和分布外环境层的不确定性。分享强调置信度应明确预测事件与时间尺度，并随着执行反馈更新，尤其要检查易碎物等高风险子群体，避免总体校准掩盖关键场景中的过度自信。"
+    },
+    {
+      "id": 44,
+      "category": "s4",
+      "title": "阿里达摩院开源 16B 具身大脑 RynnUnify，",
+      "url": "https://mp.weixin.qq.com/s/k8WWKtHcYEth_UXwioWgUw",
+      "summary": "介绍 RynnUnify 将推理规划与未来视频预测分配给两个专家，通过注意力交换信息，在子任务规划和结果想象之间交替推进。分享同时指出组合任务表现、与拼接方案的比较及部署许可等边界，关注何时调用想象、以及想象能否真正帮助后续行动选择。"
+    },
+    {
+      "id": 45,
+      "category": "resources",
+      "title": "Trustworthy AI in Pattern Recognition and Computer Vision: Attacks, Robustness, Safety, and Beyond — IEEE TPAMI Special Issue",
+      "url": "https://robust-ai.me/si/",
+      "summary": "IEEE TPAMI 可信视觉智能专题的征稿页面，列出对抗攻击、防御鲁棒性、隐私、公平解释、Agent 安全和高风险应用等主题，并提供投稿说明、时间安排与编辑信息。可作为了解相关研究议题和投稿入口的资源页，具体日程以打开后的官方页面为准。"
+    },
+    {
+      "id": 46,
+      "category": "overview",
+      "title": "从World Models到World Agents",
+      "url": "https://mp.weixin.qq.com/s/R5Tc4QQSu7VnaWp-OmGMAw",
+      "summary": "围绕从 World Models 走向 World Agents 的技术路线，串联学习型模拟器、视频生成、长上下文、空间记忆、可控世界与机器人策略学习。内容讨论开放环漂移、闭环反馈和视频到动作的连接，并梳理推理效率、状态表示及模型与规划结合等开放问题。"
+    },
+    {
+      "id": 47,
+      "category": "s6",
+      "title": "RSI爆发，RSI-Anything来了",
+      "url": "https://mp.weixin.qq.com/s/FSfB9jqpgd5r3Y6Nk78OxQ",
+      "summary": "从反馈昂贵与策略、预测器相互影响的难题出发，介绍 RSI-Anything 的候选预演、双通道更新及配对验收。文章特别说明预测器按可靠性和预算条件触发适配，新策略与新模型还需共同通过兼容检查，并区分规则、模型预测、模拟和真实测量等证据来源。"
+    },
+    {
+      "id": 48,
+      "category": "s5",
+      "title": "具身大神请留步！这是我的人生首个开源项目",
+      "url": "https://www.xiaohongshu.com/discovery/item/6ae5da71000000001100f0c2?app_platform=harmony&app_version=9.50.0&share_from_user_hidden=true&xsec_source=app_share&type=normal&xsec_token=CBdF_8rQhmiNjK2USODWrIS_M3oXymdrrGUN70xQIQ_vY=&author_share=1&share_id=a6aaff7bd9494418aae63ca156f3506f&track_code=1Quoqt69b9h&apptime=1793457675&xhsshare=WeixinSession",
+      "summary": "Spotter 作者对开源项目的介绍，说明 VLA 持续执行、本地模型并行筛查、VLM 仅在确认错误后介入的分工，并给出仿真评测、真机演示与接入方式。相较媒体解读，该分享更侧重本地开源模型、无需特权信息及策略服务注册等复现与使用信息。"
+    },
+    {
+      "id": 49,
+      "category": "s2",
+      "title": "LeCun 新作，109M 的 JEPA，为什么比 72B 语言模型更接近视觉表征？",
+      "url": "https://mp.weixin.qq.com/s/0RYIdw_-kVPL70IBiQc7jw",
+      "summary": "介绍用 JEPA 分析和改善柏拉图表征假说的研究，重点考察正样本视图如何决定模型保留共同场景结构还是单次观察细节。文章讨论理论成立条件、视觉与语言表示的对齐，以及小型文本编码器的实验；这里的对齐表现不能直接等同于全面的语言或具身能力。"
+    },
+    {
+      "id": 50,
+      "category": "s5",
+      "title": "世界模型｜给机器人接上GPT-6 Astra，就有“大脑”了？",
+      "url": "https://mp.weixin.qq.com/s/Zm4ge4cOTBC9dwyDH_QyYA",
+      "summary": "讨论把通用多模态模型接入机器人后，仍需解决状态观测、接触动力学、动作接口、实时执行和失败处置等问题。文章对比直接输出动作、专业策略与混合纠错方案，强调受控演示的成功不能自动外推到长程、精细接触或实际生产部署。"
+    },
+    {
+      "id": 51,
+      "category": "s2",
+      "title": "【世界模型前沿】 LRC-JEPA：5.5M 活跃编码器分开动力学与上下文，四项仿真平均成功率从 82% 升至 91%",
+      "url": "https://mp.weixin.qq.com/s/yGwJxvAr3y78Zzs6McuCqg",
+      "summary": "详解 LRC-JEPA 用同一视觉编码器分离紧凑动力学潜变量与残余上下文，训练时借助重建和时间约束分配信息，规划时仅滚动任务相关状态。文章分析参数、规划成本与仿真表现，并明确离线动作恢复指标与真实机器人闭环成功率之间的区别。"
+    },
+    {
+      "id": 52,
+      "category": "s4",
+      "title": "反对Agent，反对RSI，杨立昆新模型反对当下一切AI叙事",
+      "url": "https://mp.weixin.qq.com/s/SkdBUzRB-FEvrpVGSg1mZg",
+      "summary": "介绍 H-JEPA 按不同时间跨度分层预测和规划：高层设定粗粒度目标，下层逐步细化为可执行动作，以减少长任务中的细粒度搜索和误差积累。文章通过迷宫等任务解释分层结构的作用，重点是多时间尺度的状态表示及其与动作搜索的配合。"
+    },
+    {
+      "id": 53,
+      "category": "s5",
+      "title": "世界模型｜会抓工具，为什么不等于会用工具？",
+      "url": "https://mp.weixin.qq.com/s/zOwPWXQUALv6Z-Y-fLk9IQ",
+      "summary": "以 FuncBridge 等研究讨论工具功能迁移，将工具使用拆成选择物体、定位功能与握持部位、确定作用运动和稳定执行。文章区分外观变化、同类工具变化及跨类别功能迁移，强调几何、接触和动力学接口的重要性，避免把会抓工具或知道用途当成真正会用工具。"
+    },
+    {
+      "id": 54,
+      "category": "s3",
+      "title": "ICML2026-首个智能体世界模型开源：造1000个世界给AI练手，代码驱动环境完胜LLM模拟器",
+      "url": "https://mp.weixin.qq.com/s/-3nljLoPYlmuo3pAd9L-eQ?scene=1",
+      "summary": "介绍 Agent World Model 通过代码自动合成可执行工具环境，以数据库维护状态，并结合状态差异与模型判断构造奖励。文章说明场景、任务、数据库、接口和验证组成的生成流程，关注强化学习环境的规模与一致性；这里的世界主要是数字业务环境，而非物理仿真。"
+    },
+    {
+      "id": 55,
+      "category": "s5",
+      "title": "成果｜开源模型也能直接操作机器人：迈向 RUA 训练和本地部署",
+      "url": "https://mp.weixin.qq.com/s/Qne6wB2EpdcQi9dm16qXeg",
+      "summary": "介绍 uni-robot-agent 如何用统一、模块化运行框架连接开放权重模型与不同机器人环境，支持观察、工具调用和执行反馈。文章从本地部署成本、组件消融和多环境训练出发，讨论 Robot-Use Agent 的工程基础，以及如何把交互轨迹用于后续学习。"
+    },
+    {
+      "id": 56,
+      "category": "resources",
+      "title": "具身智能操作系统 Robonix v1.1 发布",
+      "url": "https://mp.weixin.qq.com/s/Ci-8ZLsULkUfX_v_IxNstA",
+      "summary": "介绍 Robonix v1.1 的系统更新，包括多任务管理、会话恢复、RTDL 流式执行、动作效果验证、语义地图及设备适配。文章还说明服务内存优化、模型评测、Hub 与 Console 等工具，适合查找将机器人硬件、规划服务和技能执行整合起来的操作系统资源。"
+    },
+    {
+      "id": 57,
+      "category": "s2",
+      "title": "表征学习 is all 世界模型 need",
+      "url": "https://www.xiaohongshu.com/discovery/item/69f34abe00000000360336e6?app_platform=harmony&app_version=9.51.1&share_from_user_hidden=true&xsec_source=app_share&type=normal&xsec_token=CBA3jKP1TkZ20ydFCohTfEHciYhRgXKVSyT4G806MBPh8=&author_share=1&share_id=c4cd059554fd4e8db7a364e99ca72132&track_code=28l6ar9snfy&apptime=1794029100&xhsshare=WeixinSession",
+      "summary": "提出世界模型的发展不仅取决于模型规模，也取决于底层表示能否保留三维结构、物理关系和行动反馈。笔记主张稀疏、自适应的表征应把计算分配给重要时空区域，以减少延迟和成本，并支持交互式模拟与闭环学习；内容属于方向性观点讨论。"
+    },
+    {
+      "id": 58,
+      "category": "s6",
+      "title": "RSI-Anything：用世界模型驱动自我进化",
+      "url": "https://mp.weixin.qq.com/s/RwbE3uSgHV8MWU9rbowN-Q",
+      "summary": "较完整地解读 RSI-Anything 的耦合更新问题：策略改变会影响预测器可靠性，预测器更新又会改变候选排序与学习信号。文章结合 JEPA-Anything 的预测分解、反馈记录、条件化适配和留用检查，解释代码、GUI、规划及科学优化中的共同自改进机制。"
+    },
+    {
+      "id": 59,
+      "category": "s2",
+      "title": "世界模型团队，正扎堆试 DINOv3。",
+      "url": "https://mp.weixin.qq.com/s/DvCYyynHT3I_qtctRj_yXA",
+      "summary": "从背景和光照变化导致机器人性能下降的问题出发，介绍冻结 DINOv3 作为视觉底座的用途，区分全局 token 与密集 patch 特征所保留的信息。文章讨论这些表示如何服务状态比较、几何关系和潜空间预测，强调视觉编码器选择对泛化与控制的影响。"
+    },
+    {
+      "id": 60,
+      "category": "s2",
+      "title": "CF-JEPA：通过可控性分解提升JEPA世界模型的鲁棒性",
+      "url": "https://mp.weixin.qq.com/s/05k0wC6_Yf97PSo3ugg5Kw",
+      "summary": "介绍 CF-JEPA 将潜状态分为动作可控与不可控两部分，通过前向预测、逆动力学、对抗约束和防坍缩正则分离任务状态与背景干扰。规划成本仅依赖可控子空间，研究重点是在明确的可控性假设下改善视觉控制鲁棒性，并检验表示分解对干扰场景的作用。"
+    },
+    {
+      "id": 61,
+      "category": "s4",
+      "title": "姚期智团队新作：代数世界模型——让AI的“不可能”变成可检查的证明",
+      "url": "https://mp.weixin.qq.com/s/bAq_5okijyXGVFKjJST07w",
+      "summary": "介绍代数世界模型从交互中提出和检验规则假设，再构造显式数学模型与 Lean 4 证明，以判断行动预算内的目标可达性。文章关注可检查的不可达证明、结构化规则与经验观察的连接；证明结论依赖所学模型及其前提，不自动等于对任意真实环境的保证。"
+    },
+    {
+      "id": 62,
+      "category": "overview",
+      "title": "Safety in Embodied AI: A Survey of Risks, Attacks, and Defenses",
+      "url": "https://x-zheng16.github.io/Awesome-Embodied-AI-Safety/",
+      "summary": "Safety in Embodied AI 综述的项目主页，按感知、认知、规划、动作交互和智能体系统等层次组织风险、攻击与防御，提供论文入口、主题索引和持续筛选资料。它与本目录采用的 Towards Safe World Models 是不同综述，可用作补充文献地图与横向对照。"
+    },
+    {
+      "id": 63,
+      "category": "resources",
+      "title": "Awesome-Embodied-AI-Safety：Safety in Embodied AI 综述资料库",
+      "url": "https://github.com/x-zheng16/Awesome-Embodied-AI-Safety",
+      "summary": "上述具身安全综述对应的 GitHub 资料库，汇集感知、认知、规划、交互和智能体系统等方向的论文、分类说明及项目文件。相较项目主页，该入口更适合查看资源组织、仓库更新与贡献方式；两条链接对应同一资料体系，本目录分别保留其不同访问入口。"
+    },
+    {
+      "id": 64,
+      "category": "s6",
+      "title": "清华大学提出 RSI 全景综述：404篇文献拆解AI递归自我改进",
+      "url": "https://mp.weixin.qq.com/s/E_QB9eFTkLVnKuh36I2PJg",
+      "summary": "解读 Recursive Self-Improvement in AI 综述，将任务系统与负责诊断、提案和筛选的改进器区分开，追踪哪些变化被继承到下一轮。文章按任务增益、能力保留与改进器增益组织证据，讨论自训练、记忆、Agent 设计和代码修改，并强调独立评测与更新边界。"
+    },
+    {
+      "id": 65,
+      "category": "s4",
+      "title": "Jev模型可能是具身智能的关键一步",
+      "url": "https://mp.weixin.qq.com/s/kNRRnYyz0WnYA1LndEtOUA",
+      "summary": "从具身场景讨论 Jev 这类选择和评分模型的潜在作用：在候选动作间快速作出判断，并把置信度用于执行、重规划或人工接管。分享同时指出机器人状态融合和置信度校准仍有难题，表达的是对决策模块分工的判断，并未给出通用机器人落地结论。"
+    },
+    {
+      "id": 66,
+      "category": "s5",
+      "title": "世界模型｜机器人认为的“成功”与实际的偏差",
+      "url": "https://mp.weixin.qq.com/s?__biz=MzY5MTM5NzE1NQ==&mid=2247485476&idx=1&sn=08c5d97e92c6b7d82bd47197ad0bf6f9&chksm=f571c9bc74d1d41c45eca788dd36aaffb41411c58cb2d13dd0c805548526b5112a8c15b745a0&mpshare=1&scene=1&srcid=1110tnsGUFwOpul5PmORB8OT&sharer_shareinfo=90f857993e1aafb7495270894cc0b885&sharer_shareinfo_first=90f857993e1aafb7495270894cc0b885#rd",
+      "summary": "结合 SafeStage、SafeManip 等材料分析目标达成却发生物理损害的“不安全成功”，将检查扩展到动作前的依赖关系、执行中的接触与轨迹，以及完成后的稳定状态。文章强调任务成功率与安全完成率需要分开报告，并区分受控风险场景结果与真实部署结论。"
+    },
+    {
+      "id": 67,
+      "category": "s6",
+      "title": "新加坡国立大学等高校联合发布93页RSI综述",
+      "url": "https://mp.weixin.qq.com/s/7onk-kDp_k_9JvF9T3vTPw",
+      "summary": "简要介绍 Physical RSI 相关综述，强调真实机器人改进受反馈噪声、硬件风险、复位成本与跨设备迁移约束。分享将行为变好、学习加快和改进器增强区分开，指出反复试验本身不足以证明递归增益，核心在于每轮保留的更新是否使后续改进更有效。"
+    },
+    {
+      "id": 68,
+      "category": "s5",
+      "title": "具身智能进入Agentic Robotics时代？清华、伯克利开源统一RUA框架",
+      "url": "https://mp.weixin.qq.com/s/_CWa2_CbkfSKD9jSe7l11A",
+      "summary": "从 Agentic Robotics 的发展介绍 uni-robot-agent，强调用统一工具接口屏蔽不同本体和仿真环境的差异，使模型能够一致地获取观测、控制机器人和接收反馈。文章结合模型、框架及真机评测讨论跨环境实验、成本和能力短板，侧重 RUA 系统的整体定位。"
+    },
+    {
+      "id": 69,
+      "category": "s5",
+      "title": "具身大变天！新国立用VLM大胜VLA，CV人沉默！",
+      "url": "https://mp.weixin.qq.com/s/iwRfyZHLH_GSYDFe6v2G1w",
+      "summary": "介绍 Show-Harness 用离散语义动作连接通用视觉语言模型与机器人，由本体专属解释器将符号确定性转换为底层控制。框架配合多视图、本体状态、任务拆解、动作分块和失败恢复等插件，支持零样本调用与轻量微调，重点是统一接口及跨任务、跨环境和跨本体迁移。"
+    },
+    {
+      "id": 70,
+      "category": "s3",
+      "title": "英伟达新一代 WAM 模型登场，拉开和纯 VLA 的差距",
+      "url": "https://mp.weixin.qq.com/s/moFBakkig0D-ebo7SWIlZg",
+      "summary": "介绍 GR00T 2 将多视角未来视频与动作放入统一建模过程，利用视频先验、人类视频和机器人数据共同训练世界动作模型。文章重点说明未来预测如何约束动作、X-Adapt 如何处理跨本体适配，以及视频和动作推理预算的取舍，讨论从动作回归走向联合世界建模的路线。"
+    },
+    {
+      "id": 71,
+      "category": "s3",
+      "title": "世界模型如何融入 VLA？四种前瞻结构的系统比较",
+      "url": "https://mp.weixin.qq.com/s/3JMBOUYrftG8E5Tv_uqq7w",
+      "summary": "比较世界模型接入 VLA 的四种结构：共享表征上的未来监督、未来查询、并行未来专家和外部预测器，并考察不同未来表示与任务条件的组合。文章强调架构和表示存在交互，长时域、动态任务与分布偏移下的收益不同，未给出适用于全部场景的单一最佳结构。"
+    },
+    {
+      "id": 72,
+      "category": "resources",
+      "title": "15 个开源项目，看透 2026 年 VLA 的三个关键转变",
+      "url": "https://mp.weixin.qq.com/s/Jgh3OTMK8gcsQYqX_fOp-Q",
+      "summary": "盘点十五个 VLA 模型及工具项目，围绕跨本体适配、实时动作执行与工程基础设施三类变化组织材料。除模型权重外，还关注数据接入、后训练、仿真评测和真机部署链路，可用作筛选开源资源的入口；不同项目的适用硬件与开放内容需要分别查看。"
+    },
+    {
+      "id": 73,
+      "category": "research",
+      "title": "博二这年我才搞明白：那些能冲击顶刊的idea，到底是怎么长出来的",
+      "url": "https://mp.weixin.qq.com/s/vWRvt6udgOz4evgLM_5DYg",
+      "summary": "从研究经验讨论选题如何形成，区分视角、方法和证据层面的新增价值，并用重要性、新颖性与可行性检查初步想法。文章建议从矛盾现象、跨领域方法和实际需求中寻找问题，强调文献理解与资源条件，是一般科研方法分享，而非特定具身方向的实证结论。"
+    },
+    {
+      "id": 74,
+      "category": "s5",
+      "title": "逼近GPT-6 Astra！韩松团队让Qwen3.8-27B在5090上操作机械臂，现已开源",
+      "url": "https://mp.weixin.qq.com/s/krrLNW8B6-s2o35BVzDq2A",
+      "summary": "介绍 PEAR 机器人后训练项目，以仿真强化学习训练开放权重视觉语言模型，使其根据多路图像和机器人状态输出末端目标位姿，再由逆运动学和底层控制执行。文章讨论仿真到真实双臂的迁移、本地推理及通用能力保持，并提供论文、代码和模型资源入口。"
+    }
+  ],
+  "supplement": {
+    "title": "群内文字分享：50页具身技术报告预告",
+    "category": "s5",
+    "summary": "群内转发预告一份尚待解读的具身技术报告，提及 RoboTwin、BEHAVIOR Challenge 及真实机器人任务表现，并强调模型用于日常真机运行。原记录未附对应报告链接、模型名称与实验细节，因此此处仅保留预告信息，不据此归纳具体方法或性能结论。"
+  }
+}
